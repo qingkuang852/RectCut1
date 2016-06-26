@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:textAllCaps="false"
+        android:transitionName="btn"
+        android:textColor="#ffffff"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:text="选择照片"
+        android:id="@+id/titlebar"
+        android:background="@drawable/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:targetApi="lollipop" />
+    <ListView
+        android:transitionName="reveal"
+        android:id="@+id/listview"
+        android:layout_below="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gridview"
+        android:visibility="gone"
+        android:background="#ffffff"
+        android:layout_below="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>
